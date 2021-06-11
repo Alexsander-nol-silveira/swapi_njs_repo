@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "76b0aa7c-4487-4d73-b11e-fc7db3cd5a7a",
+		"name": "SWAPI - API - LOCAL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SWAGGER",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/swagger-ui.html"
+			},
+			"response": []
+		},
+		{
+			"name": "LIST ALL FILMS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/films"
+			},
+			"response": []
+		},
+		{
+			"name": "DETAIL FILM",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/films/3"
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE DESCRIPTION FILM",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"description\" : \"Nova Descriçao\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/films/1"
+			},
+			"response": []
+		}
+	]
+}

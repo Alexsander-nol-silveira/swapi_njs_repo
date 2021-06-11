@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "a659b740-410c-497f-b121-20a0ae40fa11",
+		"name": "STAR WARS - API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FILM - SCHEMA",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://swapi.dev/api/films/schema"
+			},
+			"response": []
+		},
+		{
+			"name": "LIST ALL FILMS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://swapi.dev/api/films"
+			},
+			"response": []
+		},
+		{
+			"name": "DETAIL FILM",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://swapi.dev/api/films/1"
+			},
+			"response": []
+		}
+	]
+}
