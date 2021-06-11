@@ -8,11 +8,15 @@ O projeto contém alguns exemplos de serviço REST.
 ### Pré requisitos
 
 ```
-Node: v14.17.0
+Node: v14.17. (https://nodejs.org/en/)
 
-Npm: 6.14.13
+Npm: 6.14.13 (https://nodejs.org/en/)
+
+express: 4.17.1 (https://www.npmjs.com/package/express)
 
 Vs Code: 1.57.0
+
+Postman para Testes : (https://www.postman.com/downloads/)
 
 ```
 
