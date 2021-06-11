@@ -14,7 +14,7 @@ Npm: 6.14.13 (https://nodejs.org/en/)
 
 express: 4.17.1 (https://www.npmjs.com/package/express)
 
-Vs Code: 1.57.0
+Vs Code: 1.57.0 (https://code.visualstudio.com/download)
 
 Postman para Testes : (https://www.postman.com/downloads/)
 
