@@ -16,6 +16,16 @@ Vs Code: 1.57.0
 
 ```
 
+## Rodando os Testes
+
+Utilize o postman Para rodar os testes.
+
+Collection estão na raiz do repositório.
+
+```
+SWAPI - API - LOCAL.postman_collection.json
+```
+
 ## Rodando local
 
 Para rodar o projeto, efetue os procedimentos:
