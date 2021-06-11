@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "axios": "^0.21.1",
     "express": "^4.17.1",
-    "request": "^2.88.2",
     "underscore": "^1.13.1"
   },
   "devDependencies": {
