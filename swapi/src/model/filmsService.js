@@ -4,8 +4,7 @@ const constants = require('./constants');
 exports.listAllFilms = async (funcReturn) => {
     try {
         console.log('serviço para listar filmes...');
-        const { data, status } = await axios.get(constants.STAR_WARS_URL);
-        
+        const { data, status } = await axios.get(constants.STAR_WARS_URL);        
         console.log(`HTTP STATUS: [${status}]`);
         if (status === 200) {
             let returnService = data;
