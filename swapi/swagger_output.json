@@ -1,0 +1,193 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "SWAPI  - POC",
+    "description": "API Conceito em Node.js."
+  },
+  "host": "localhost:8080",
+  "basePath": "/api",
+  "tags": [],
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/films/": {
+      "get": {
+        "tags": [],
+        "description": "Efetua a listagens dos Filmes.",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Sucesso.",
+            "schema": {
+              "$ref": "#/definitions/ReturnService"
+            }
+          },
+          "404": {
+            "description": "Nenhum Resultado encontrado."
+          }
+        }
+      }
+    },
+    "/films/{id}": {
+      "get": {
+        "tags": [],
+        "description": "Detalha o Filme pelo identificador.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "Idenfificador do filme"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Sucesso.",
+            "schema": {
+              "$ref": "#/definitions/Film"
+            }
+          },
+          "404": {
+            "description": "Nenhum Resultado encontrado."
+          }
+        }
+      },
+      "put": {
+        "tags": [],
+        "description": "Modifica a descrição, atualizando a versão.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "Idenfificador do filme"
+          },
+          {
+            "name": "input",
+            "in": "body",
+            "description": "Sucesso.",
+            "schema": {
+              "$ref": "#/definitions/InputParameter"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Sucesso."
+          },
+          "404": {
+            "description": "Nenhum Resultado encontrado."
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "ReturnService": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "string",
+          "example": "integer"
+        },
+        "next": {
+          "type": "string",
+          "example": "integer"
+        },
+        "previous": {
+          "type": "string",
+          "example": "integer"
+        },
+        "results": {
+          "type": "string",
+          "example": "arraylist"
+        }
+      }
+    },
+    "Film": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "example": "string"
+        },
+        "episode_id": {
+          "type": "string",
+          "example": "integer"
+        },
+        "opening_crawl": {
+          "type": "string",
+          "example": "string"
+        },
+        "director": {
+          "type": "string",
+          "example": "string"
+        },
+        "producer": {
+          "type": "string",
+          "example": "string"
+        },
+        "release_date": {
+          "type": "string",
+          "example": "string"
+        },
+        "characters": {
+          "type": "string",
+          "example": "string"
+        },
+        "planets": {
+          "type": "string",
+          "example": "string"
+        },
+        "starships": {
+          "type": "string",
+          "example": "string"
+        },
+        "vehicles": {
+          "type": "string",
+          "example": "string"
+        },
+        "species": {
+          "type": "string",
+          "example": "string"
+        },
+        "url": {
+          "type": "string",
+          "example": "string"
+        },
+        "created": {
+          "type": "string",
+          "example": "string"
+        },
+        "edited": {
+          "type": "string",
+          "example": ""
+        },
+        "version": {
+          "type": "string",
+          "example": "integer"
+        }
+      }
+    },
+    "InputParameter": {
+      "type": "object",
+      "properties": {
+        "description": {
+          "type": "string",
+          "example": "string"
+        }
+      }
+    }
+  }
+}

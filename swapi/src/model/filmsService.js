@@ -5,7 +5,7 @@ const constants = require('./constants');
 exports.listAllFilms = function(funcReturn){
 
     console.log('serviço para listar filmes...');
-    request(constants.STAR_WARS_URL, function (error, response, body) {
+    request(constants.STAR_WARS_URL, (error, response, body) => {
 
         console.log(`HTTP STATUS: [${response.statusCode}]`);
         if (!error && response.statusCode === 200) {
